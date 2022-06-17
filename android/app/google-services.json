@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "26930920161",
+    "project_id": "wind-turbine-monitoring",
+    "storage_bucket": "wind-turbine-monitoring.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26930920161:android:50c2a7e2ee06a3048555a0",
+        "android_client_info": {
+          "package_name": "com.example.wind_turbine_monitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26930920161-mi685922jdo7000m4l6hca5l2p9ocp5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0rPJFOoy_-iD43QXjsteIWGu7nCvTOxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26930920161-mi685922jdo7000m4l6hca5l2p9ocp5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
