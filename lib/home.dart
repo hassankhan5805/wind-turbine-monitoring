@@ -9,7 +9,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  DatabaseReference? _databaseReference = FirebaseDatabase.instance.ref();
+  DatabaseReference? _databaseReference = FirebaseDatabase.instance.reference();
 
   void setDataFirstTime(String cmd, String cmdValue) {
     _databaseReference!.child("123").update({cmd: cmdValue}).asStream();
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       rowComponent("Temperature",
                           "${snapshot.data.snapshot.value["temperature"].toString().split(".").first}"),
-                      rowComponent("Voltage", "${snapshot.data}"),
+                      rowComponent("Voltage", "${snapshot.data.snapshot.value["voltage"]}"),
                     ],
                   ),
                   Row(
