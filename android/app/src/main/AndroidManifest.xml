@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wind_turbine_monitoring">
    <application
-        android:label="wind_turbine_monitoring"
+        android:label="Wind Turbine Monitoring"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
