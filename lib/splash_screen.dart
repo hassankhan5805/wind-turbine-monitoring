@@ -66,7 +66,7 @@ class _MyCustomSplashScreenState extends State<MyCustomSplashScreen>
     double _height = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: Colors.lightBlue,
       body: Stack(
         children: [
           Column(
