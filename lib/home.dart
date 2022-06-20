@@ -186,7 +186,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                             ),
                                             Container(
                                                 child: Text(
-                                                    "${double.parse(snapshot.data.snapshot.value["current"]).toStringAsFixed(4)}A",
+                                                    "${double.parse(snapshot.data.snapshot.value["current"]).toStringAsFixed(6)}A",
                                                     style: TextStyle(
                                                         fontSize: 14,
                                                         fontWeight:
@@ -231,7 +231,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ],
                         ),
                         rowComponent("Power",
-                            "${((double.parse(snapshot.data.snapshot.value["voltage"]) * double.parse(snapshot.data.snapshot.value["voltage"])) / 1000).toStringAsFixed(2)}W")
+                            "${((double.parse(snapshot.data.snapshot.value["voltage"]) * double.parse(snapshot.data.snapshot.value["voltage"])) / 1000).toStringAsFixed(5)}W")
                       ],
                     )
                   ],

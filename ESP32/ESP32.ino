@@ -54,8 +54,10 @@ void loop(){
   adc_voltage = (adc_value * ref_voltage) / 1024.0;
   in_voltage = adc_voltage / (R2 / (R1 + R2));
   Serial.println("\nvoltage");
+  if(in_voltage!=0)
+  {
   Serial.print(in_voltage,2);
-  Firebase.setString(firebaseData, path +"/voltage", in_voltage);
+  Firebase.setString(firebaseData, path +"/voltage", in_voltage);}
    /// current
   int r = 1000;
   currentValue = in_voltage/r;
@@ -70,6 +72,6 @@ Firebase.setString(firebaseData, path +"/current", currentValue);
     temp = 28;
     }
   Firebase.setString(firebaseData, path +"/temperature", temp);
-  delay(600);
+  delay(200);
 
 }
